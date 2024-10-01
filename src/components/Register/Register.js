@@ -26,6 +26,7 @@ class Register extends Component {
     onSubmitRegister = () => {
         fetch('https://smart-brain-api-zdnf.onrender.com/register', {
             method: 'post',
+            mode: 'cors',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 email: this.state.email,
