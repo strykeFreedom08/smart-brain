@@ -141,6 +141,7 @@ const App = () => {
     
     fetch('https://smart-brain-api-zdnf.onrender.com/image', {
       method: 'put',
+      mode: 'cors',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
           id: id,
