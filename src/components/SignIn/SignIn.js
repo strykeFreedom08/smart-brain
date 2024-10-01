@@ -17,8 +17,8 @@ class SignIn extends Component {
         this.setState({signInPassword: event.target.value})
     }
 
-    onSubmitSignIn = () => {
-        fetch('https://face-recognition-api-k1mn.onrender.com/signin', {
+    onSubmitSignIn = () => { 
+        fetch('https://smart-brain-api-zdnf.onrender.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
