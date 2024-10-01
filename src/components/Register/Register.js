@@ -24,7 +24,7 @@ class Register extends Component {
     }
 
     onSubmitRegister = () => {
-        fetch('https://face-recognition-api-k1mn.onrender.com/register', {
+        fetch('https://smart-brain-api-zdnf.onrender.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -43,7 +43,7 @@ class Register extends Component {
     }
 
     render() {
-
+ 
         return (
             <div>
                 <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 center shadow-5">
