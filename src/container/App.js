@@ -139,7 +139,7 @@ const App = () => {
   const onButtonSubmit = () => {
     setImageUrl(input)
     
-    fetch('https://face-recognition-api-k1mn.onrender.com/image', {
+    fetch('https://smart-brain-api-zdnf.onrender.com/image', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -149,7 +149,7 @@ const App = () => {
     })
     .then(response => response.json())
     .then(data => {
-      setEntries(data.count);
+      setEntries(data.count); 
       removeBoundingBox();
       data.faceBox.forEach(fb => {
         addBoundingBox(fb)
